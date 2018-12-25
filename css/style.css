@@ -1,19 +1,37 @@
 @charset "UTF-8"; 
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  vertical-align: top;
+}
+
+.normal-text {
+  font-family: 'Lato', sans-serif;
+}
+
 header {
-  height: 75px;
-  padding: 15px;
   box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .header-icon {
   display: inline-block;
-  margin-left: 250px;
 }
 
-.fa-bolt {
+.bolt {
   color: #333;
-  height: 45px;
 }
 
 .header-nav-bar {
@@ -21,11 +39,11 @@ header {
 }
 
 .header-contact {
-  font-size: 12px;
-  padding: 14px 12px;
   background-color: #74cfae;
   color: #fff;
-  margin-right: 200px;
+  display: block;
+  font-size: 12px;
+  padding: 14px 12px;
 }
 
 /* header 終わり　*/
@@ -40,7 +58,6 @@ main {
 
 .first {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
 }
 
 .theme-title {
@@ -69,7 +86,7 @@ main {
   clear: both;
 }
 
-.iphone {
+.what-do-left {
   float: left;
 }
 
@@ -104,7 +121,6 @@ main {
 .work {
   background-color: #f2f2f2;
   padding: 60px 0 70px;
-  height: 904px;
 }
 
 .work-title {
@@ -114,26 +130,23 @@ main {
   font-family: 'Raleway', sans-serif;
 }
 
-.up {
-  margin: 40px;
+.work-image {
+  margin: 40px 0 10px;
   box-sizing: border-box;
   font-size: 0;
   display: flex;
   justify-content: center;
-}
-
-.down {
-  margin: 80px 40px 90px;
-  box-sizing: border-box;
-  font-size: 0;
-  display: flex;
-  justify-content: center;
+  flex-wrap: wrap
 }
 
 .photo {
+  margin-bottom: 80px;
   margin-right: 100px;
   opacity: 0.7;
-  cursor: pointer;
+}
+
+.photo:nth-child(3n) {
+  margin-right: 0;
 }
 
 .photo:hover {
@@ -141,21 +154,16 @@ main {
   transition: opacity 0.3s;
 }
 
-.photo:nth-child(3n) {
-  margin-right: 0;
-}
-
 .work-bottom {
+  align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .work-text {
   font-size: 20px;
-  float: left;
   margin-right: 90px;
-  width: 660px;
-  height: 30px;
+  width: 570px;
   text-align: center;
   line-height: 25px;
   color: #777777;
@@ -168,7 +176,6 @@ main {
   border: none;
   color: #fff;
   background-color: #74cfae;
-  float: right;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -188,6 +195,7 @@ main {
 
 .skill-title {
   margin-bottom: 50px;
+  font-size: 24px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -205,35 +213,29 @@ main {
 }
 
 .skill-name {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* skill 終わり */
 
 .s-icon {
-  padding: 200px;
+  padding: 200px 0;
   text-align: center;
 }
 
 .icon {
   display: inline-block;
   width: 185px;
-  height: 80px;
-  position: relative;
+  transition: background-color 0.3s;
+}
+
+.icon-link {
+  display: block;
+  padding: 16px 0;
 }
 
 .icon-image {
   color: #74cfae;
-  position: absolute;
-  top: 16px;
-  left: 68px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.fa-facebook-f {
-  position: absolute;
-  left: 80px;
 }
 
 .icon:hover {
@@ -244,7 +246,6 @@ main {
 /*main 終わり*/
 
 footer {
-  height: 55px;
   background-color: #74cfae;
   box-sizing: border-box;
   padding: 20px 10px 25px;
@@ -252,7 +253,7 @@ footer {
 
 .footer-text {
   color: #fff;
-  float: right;
-  font-size: 5px;
-  padding-right: 300px;
+  text-align: right;
+  font-size: 3px;
+  padding-right: 50px;
 }
