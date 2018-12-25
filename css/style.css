@@ -1,0 +1,258 @@
+@charset "UTF-8"; 
+
+header {
+  height: 75px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.header-icon {
+  display: inline-block;
+  margin-left: 250px;
+}
+
+.fa-bolt {
+  color: #333;
+  height: 45px;
+}
+
+.header-nav-bar {
+  float: right;
+}
+
+.header-contact {
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  margin-right: 200px;
+}
+
+/* header 終わり　*/
+
+main {
+  background-color: #f2f2f2;
+}
+
+.theme {
+  padding: 250px 0;
+}
+
+.first {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.theme-title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #66CC99;
+  line-height: 73px;
+}
+
+.theme-text {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+/* theme 終わり */
+
+.what-do {
+  padding: 50px 10px 0;
+  background-color: #74cfae;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.iphone {
+  float: left;
+}
+
+.what-do-main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.what-do-right {
+  float: right;
+  width: 680px;
+}
+
+.second {
+  color: #fff;
+  text-align: center;
+}
+
+.what-do-title {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.what-do-text {
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+/* what-do 終わり */
+
+.work {
+  background-color: #f2f2f2;
+  padding: 60px 0 70px;
+  height: 904px;
+}
+
+.work-title {
+  font-size: 24px;
+  text-align: center;
+  color: #777777;
+  font-family: 'Raleway', sans-serif;
+}
+
+.up {
+  margin: 40px;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.down {
+  margin: 80px 40px 90px;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  margin-right: 100px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.photo:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.photo:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.work-text {
+  font-size: 20px;
+  float: left;
+  margin-right: 90px;
+  width: 660px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  color: #777777;
+}
+
+.email-btn {
+  font-size: 12px;
+  padding: 14px 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #74cfae;
+  float: right;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.email-btn:hover {
+  background-color: #fff;
+  color: #74cfae;
+}
+
+/* work 終わり */
+
+.skill {
+  padding: 70px 10px 100px;
+  background-color: #4e4e4e;
+  color: #fff;
+  text-align: center;
+}
+
+.skill-title {
+  margin-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skill-op {
+  display: inline-block;
+  width: 122px;
+  font-size: 16px;
+  margin-right: 180px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.skill-op:last-child {
+  margin-right: 0;
+}
+
+.skill-name {
+  padding-top: 20px;
+}
+
+/* skill 終わり */
+
+.s-icon {
+  padding: 200px;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 185px;
+  height: 80px;
+  position: relative;
+}
+
+.icon-image {
+  color: #74cfae;
+  position: absolute;
+  top: 16px;
+  left: 68px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fa-facebook-f {
+  position: absolute;
+  left: 80px;
+}
+
+.icon:hover {
+  background-color: #fff;
+}
+
+
+/*main 終わり*/
+
+footer {
+  height: 55px;
+  background-color: #74cfae;
+  box-sizing: border-box;
+  padding: 20px 10px 25px;
+}
+
+.footer-text {
+  color: #fff;
+  float: right;
+  font-size: 5px;
+  padding-right: 300px;
+}
