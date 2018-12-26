@@ -325,6 +325,15 @@ img {
     margin-bottom: 0;
   }
 
+/* icon 始まり */
+
+  .icon-inner {
+    font-size: 0;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
 }
 
 /* sp レスポンシブ */
