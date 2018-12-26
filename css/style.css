@@ -79,26 +79,6 @@ img {
   background-color: #74cfae;
 }
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.what-do-left {
-  float: left;
-}
-
-.what-do-main {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.what-do-right {
-  float: right;
-  width: 680px;
-}
-
 .second {
   color: #fff;
   text-align: center;
@@ -149,12 +129,6 @@ img {
 .photo:hover {
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-.work-bottom {
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 .work-text {
@@ -248,24 +222,68 @@ img {
 .footer-text {
   color: #fff;
   text-align: right;
-  padding-right: 50px;
 }
+
+/* pc レスポンシブ */
+@media screen and (min-width:1200px){
+
+  .theme-inner {
+    padding-top: 80px;
+  }
+
+ .clearfix:after {
+   content: "";
+   display: block;
+   clear: both;
+  }
+
+  .what-do-left {
+   float: left;
+  }
+
+  .what-do-main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .what-do-right {
+    float: right;
+    width: 680px;
+  }
+
+  .footer-text {
+    padding-right: 50px;
+  }
+
+  .work-bottom {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+  }
+
+}
+
 
 /* tab レスポンシブ　*/
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199px){
   .inner {
     max-width: 97%;
     margin: 0 auto;
   }
+
 /* theme 始まり*/
+
+  .theme {
+    padding: 240px 0 130px;
+  }
 
   .what-do {
     padding-bottom: 25px;
   }
 
   .what-do-main {
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -285,8 +303,9 @@ img {
   /* work 始まり　*/
 
   .work-image {
-    width: 500px;
+    width: 100%;
     margin: 40px auto 0;
+    flex-direction: column;
   }
 
   .photo {
@@ -299,6 +318,7 @@ img {
 
   .work-bottom {
     display: inline-block;
+    text-align: center;
   }
 
   .work-text {
@@ -307,9 +327,8 @@ img {
   }
 
   .email-btn {
-    display: block;
+    display: inline-block;
     margin: 40px auto 0;
-    width: 98px;
     text-align: center;
   }
 
@@ -333,17 +352,14 @@ img {
 
   .icon {
     font-size: 16px;
+    width: 25%;
   }
 }
 
 /* sp レスポンシブ */
 
-@media screen and (max-width:767px){
+@media screen and (max-width:766px){
   
-  .theme {
-    padding: 160px 0 130px;
-  }
-
   .theme-title {
     font-size: 80px;
   }
@@ -369,7 +385,7 @@ img {
   }
 
   .s-icon {
-    padding: 50px 15px;
+    padding: 50px 0;
   }
 
   .icon {
@@ -377,10 +393,6 @@ img {
   }
 
   /* icon 終わり */
-
-  .footer-text {
-    padding-right: 0;
-  }
 
 /* ハンバーガーメニュー　アイコン */
 .header-nav-bar {
