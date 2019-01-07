@@ -11,6 +11,10 @@ img {
   vertical-align: top;
 }
 
+.sp-contact {
+  display: none;
+}
+
 .header-content {
   box-sizing: border-box;
   width: 100%;
@@ -399,7 +403,28 @@ img {
   display: none;
 }
 
-  #humberger {
+.header-contact {
+  position: relative;
+}
+
+.sp-contact {
+  display: none;
+  background-color: #74cfae;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.is-show {
+  display: block
+}
+
+
+  .humberger {
     position: relative;
     height: 36px;
     width: 36px;
@@ -410,7 +435,7 @@ img {
     border-radius: 4px;
     float: right;
   }
-  #humberger div {
+  .humberger div {
     position: absolute;
     left: 4px;
     height: 4px;
@@ -420,12 +445,13 @@ img {
     display: inline-block;
     box-sizing: border-box;
   }
-  #humberger div:nth-of-type(1) {
+  .humberger div:nth-of-type(1) {
     top: 4px;
   }
-  #humberger div:nth-of-type(2) {
+  .humberger div:nth-of-type(2) {
     top: 14px;
   }
-  #humberger div:nth-of-type(3) {
+  .humberger div:nth-of-type(3) {
     bottom: 4px;
   }
+}
